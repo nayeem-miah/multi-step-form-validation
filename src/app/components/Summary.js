@@ -1,6 +1,9 @@
+import toast from "react-hot-toast";
+
 export default function Summary({ formData }) { 
     const handleSubmit = () => {
         console.log(formData, "form data ");
+        toast.success("Form submitted successfully!");
     }
 
     return (

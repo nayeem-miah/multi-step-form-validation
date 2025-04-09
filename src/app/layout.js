@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         
-       <div className=" max-w-7xl mx-auto">{children}</div>
+        <div className=" max-w-7xl mx-auto">{children}</div>
+        <Toaster />
+
         {/* <Footer /> */}
         <footer className="flex py-4 w-full items-center justify-center bg-gray-900 text-white border-t">
           <div className="flex items-center">
