@@ -1,10 +1,13 @@
 export default function Summary({ formData }) { 
+    const handleSubmit = () => {
+        console.log(formData, "form data ");
+    }
 
     return (
         <div>
-               <pre>{JSON.stringify(formData, null, 2)}</pre>
-      <button onClick={handleSubmit}>Submit</button>
+        <h2>Summary</h2>
+        <pre>{JSON.stringify(formData, null, 2)}</pre>
+       <button onClick={handleSubmit}>Submit</button>
     </div>
-         
     )
 }
