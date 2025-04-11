@@ -1,3 +1,5 @@
+
+import { useRouter } from "next/router";
 import toast from "react-hot-toast";
 
 export default function Summary({ formData }) { 
@@ -5,11 +7,12 @@ export default function Summary({ formData }) {
     const handleSubmit = () => {
         // console.log(formData, "form data ");
         toast.success("Form submitted successfully!");
-        
+        // router.push('/')
+
     }
 
     return (
-        <div className="space-y-4  p-4 w-1/2 mx-auto">
+        <div className="space-y-4  p-4 md:w-1/2 mx-auto">
             <h2 className="text-center text-amber-600 text-2xl" >show all data </h2>
             <div className="font-bold text-amber-600">
                 <p>name: {formData?.fullName}</p>

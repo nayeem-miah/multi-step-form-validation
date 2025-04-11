@@ -17,7 +17,7 @@ export default function Step2({ nextStep, prevStep, setFormData }) {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  p-4 w-1/2 mx-auto">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  p-4 md:w-1/2 mx-auto">
       <input {...register("street")} className="border rounded bg-white text-black w-full px-4 py-2"  placeholder="Street Address" />
       <p className="text-red-500">{errors.street?.message}</p>
 
