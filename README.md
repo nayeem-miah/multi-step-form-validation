@@ -14,8 +14,24 @@ Each step includes validation, and there’s an option to review the summary bef
 - Responsive design for mobile users.
 - Data submission simulation using React Query.
 
-## How to Run the Project
+
+
+   
+### How to Run the Project
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
+   https://github.com/nayeem-miah/multi-step-form-validation.git
+   ```
+2. Navigate to the frontend directory:
+   ```bash
+   cd multi-step-form-validation
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the frontend application:
+   ```bash
+   npm run dev
+   ```
