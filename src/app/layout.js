@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         
-        <div className=" max-w-7xl mx-auto">{children}</div>
+        <div className=" max-w-7xl mx-auto flex justify-center w-full bg-gray-300">{children}</div>
         <Toaster />
 
         {/* <Footer /> */}

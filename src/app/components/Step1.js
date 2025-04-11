@@ -14,17 +14,17 @@ export default function Step1({ nextStep, setFormData }) {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-      <input {...register("fullName")} placeholder="Full Name" />
-      <p>{errors.fullName?.message}</p>
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  p-4 w-1/2 mx-auto">
+      <input className="border rounded bg-white text-black w-full px-4 py-2"  {...register("fullName")} placeholder="Full Name" />
+      <p className="text-red-500">{errors.fullName?.message}</p>
 
-      <input {...register("email")} placeholder="Email" />
-      <p>{errors.email?.message}</p>
+      <input {...register("email")} className="border rounded bg-white text-black w-full px-4 py-2"  placeholder="Email" />
+      <p className="text-red-500">{errors.email?.message}</p>
 
-      <input {...register("phone")} placeholder="Phone Number" />
-      <p>{errors.phone?.message}</p>
+      <input {...register("phone") } className="border rounded bg-white text-black w-full px-4 py-2"  placeholder="Phone Number" />
+      <p className="text-red-500">{errors.phone?.message}</p>
 
-      <button type="submit">Next</button>
+      <button className="px-4 py-2 rounded bg-amber-400 hover:bg-amber-300 w-full" type="submit">Next</button>
     </form>
   );
 }

@@ -12,7 +12,7 @@ export default function Home() {
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
   return (
-    <div className="py-10">
+    <div className="py-10 min-h-screen w-full">
     {step === 1 && <Step1 nextStep={nextStep} setFormData={setFormData} />}
     {step === 2 && <Step2 nextStep={nextStep} prevStep={prevStep} setFormData={setFormData} />}
     {step === 3 && <Step3 nextStep={nextStep} prevStep={prevStep} setFormData={setFormData} />}
